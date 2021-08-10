@@ -40,6 +40,10 @@ h1{
     border-radius: 25px;
 }
 
+.input:hover{
+    box-shadow: 0 0 10px 3px aqua;
+}
+
 .addButton{
     height: 50px;
     width: 50px;
@@ -56,6 +60,7 @@ h1{
 .addButton:hover{
     transform: rotate(90deg);
     color: rgb(0, 255, 21);
+    box-shadow: 0 0 10px 3px #a0a4d9;;
 }
 
 .container{
