@@ -19,7 +19,7 @@ h1 {
 .heading {
   font-family: "Sriracha", cursive;
   font-weight: 800;
-  color: aqua;
+  color: yellow;
 }
 
 .inputDiv {
@@ -41,7 +41,7 @@ h1 {
 }
 
 .input:hover {
-  box-shadow: 0 0 10px 3px aqua;
+  box-shadow: 0 0 10px 3px yellow;
 }
 
 .addButton {
@@ -76,6 +76,11 @@ h1 {
   padding: 0.5rem;
   margin-bottom: 1.5rem;
   border: 2px solid #fff;
+  transition: 0.5s;
+}
+
+.item:hover{
+  box-shadow: 0 0 10px 3px yellow;
 }
 
 .itemInput {
@@ -87,13 +92,13 @@ h1 {
   font-size: 1rem;
 }
 
-.editButton {
+.doneButton {
   font-size: 1rem;
   margin: 0 0.5rem;
   font-family: "Sriracha", cursive;
   background: none;
   outline: none;
-  color: orange;
+  color: rgb(0, 255, 38);
   border: none;
   cursor: pointer;
 }
@@ -107,3 +112,18 @@ h1 {
   border: none;
   cursor: pointer;
 }
+
+#footer *{
+    background-color: #212121;
+    height: 60px;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    line-height: 50px;
+    color: #aaa;
+    text-align: center;
+    width: 100%;
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+

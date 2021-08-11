@@ -18,9 +18,9 @@ class item {
     let itemBox = document.createElement("div");
     itemBox.classList.add("item");
 
-    let editButton = document.createElement("button");
-    editButton.innerHTML = "EDIT";
-    editButton.classList.add("editButton");
+    let doneButton = document.createElement("button");
+    doneButton.innerHTML = "DONE";
+    doneButton.classList.add("doneButton");
 
     let removeButton = document.createElement("button");
     removeButton.innerHTML = "REMOVE";
@@ -29,16 +29,23 @@ class item {
     container.appendChild(itemBox);
 
     itemBox.appendChild(input);
-    itemBox.appendChild(editButton);
+    itemBox.appendChild(doneButton);
     itemBox.appendChild(removeButton);
 
-    editButton.addEventListener("click", () => this.edit(input));
-    // editButton.addEventListener('click', () => this.strike(input));
+    // doneButton.addEventListener("click", () => this.edit(input));
+    doneButton.addEventListener("click", function () {
+      input.style.textDecoration = "line-through";
+    });
+
+    doneButton.addEventListener("dblclick", function () {
+      input.style.textDecoration = "none";
+    });
+
     removeButton.addEventListener("click", () => this.remove(itemBox));
   }
-  edit(input) {
-    input.disabled = !input.disabled;
-  }
+  // edit(input) {
+  //   input.disabled = !input.disabled;
+  // }
 
   remove(item) {
     container.removeChild(item);
