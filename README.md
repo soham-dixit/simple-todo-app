@@ -1,4 +1,5 @@
 # simple-todo-app
 A simple todo app built using HTML, CSS &amp; JavaScript
 
-![todo](https://user-images.githubusercontent.com/65973895/129003754-49c97686-b37d-4551-8c81-e6fb67ff783c.PNG)
+![image](https://user-images.githubusercontent.com/65973895/129024210-41c59948-5196-4ce6-93b3-818543a9d1b8.png)
+
